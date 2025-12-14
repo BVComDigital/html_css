@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: chocolate; */
+            border: 10px solid chocolate;
+
+            /* padding-top: 10px;
+            padding-right: 12px;
+            padding-bottom: 14px;
+            padding-left: 20px; */
+            padding: 10px 12px 14px 20px; /* padding: 10px - coloca 10 px em todos os lados. Se colocar dois valores seta o cima e baixa com o primeiro valor e direita e esquerda com o segundo valor*/
+
+
+            text-align: justify;
+            margin-top: 10px;
+            /* margin-right: 10px;
+            margin-bottom: 25px;
+            margin-left: 10px; */
+            /* margin: auto; Deixa a caixa no meio da tela */
+            margin: 20px auto 25px auto; /* margem superior 20px, direita automática, inferior 25px, esquerda automática */
+
+            /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red; */
+            outline: 5px dashed red; /* Mesma coisa que as três linhas de cima */
+        }
+
+        a {
+            border-width: 10px;
+            border-style: groove;
+            border-color: green;
+            padding: 10px 11px 8px 6px;
+            /* display: block; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Lével</h1>
+    <p>Parágrafo também de box lével, ma os <a href="#">links são exemplos de in-line lévels</a>. Vamos ver como isso funciona.</p>
+</body>
+</html>

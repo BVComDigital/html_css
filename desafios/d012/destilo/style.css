@@ -1,13 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;   
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -20,6 +32,8 @@ header {
 header h1 {
     padding-top: 50px;
     font-variant: small-caps;  /*Deixa o texto em caixa alta, com as primeiras letras maiores*/
+    font-family: var(--fonte2);
+    font-size: 3.5em;
 }
 
 header > p {
@@ -41,6 +55,11 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -51,20 +70,74 @@ section.normal {
 section.imagem {
     background-color: rgb(36, 35, 35);
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.205);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
 }
-
-
-
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+/* Base styles for mobile (320px - 480px) */
+body {
+  font-size: 14px;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+/* Small tablets and larger mobile devices (481px - 768px) */
+@media (min-width: 481px) {
+  body {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+
+/* Tablets and small laptops (769px - 1024px) */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+    padding: 24px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Large desktops and high-resolution screens (1025px and up) */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+    padding: 32px;
+    max-width: 80%;
+  }
+}
+
+/* Extra-large screens (1440px and up) */
+@media (min-width: 1440px) {
+  body {
+    font-size: 20px;
+    padding: 40px;
+    max-width: 70%;
+  }
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        thead {
+            background-color: rgb(134, 134, 134);
+            color: white;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: black;
+        }
+
+        tbody {
+            font-size: 0.8em;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        tr.media {
+            background-color: rgb(134, 134, 134);
+            color: white;
+            text-align: left;
+        }
+
+        td.num {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">80</td>
+                <td class="num">80</td>
+                <td class="num">80</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">70</td>
+                <td class="num">90</td>
+                <td class="num">80</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">70</td>
+                <td class="num">90</td>
+                <td class="num">80</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">70</td>
+                <td class="num">90</td>
+                <td class="num">80</td>
+            </tr>
+            <tr class="media">
+                <th scope="row" class="media" colspan="4">Média Exatas</th>
+                <td class="num">80</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="num">80</td>
+                <td class="num">80</td>
+                <td class="num">80</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">80</td>
+                <td class="num">80</td>
+                <td class="num">80</td>
+            </tr>
+            <tr class="media">
+                <th scope="row" class="media" colspan="4">Média Exatas</th>
+                <td class="num">80</td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

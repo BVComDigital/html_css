@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formuçário</h1>
+    <!-- o action é para o form será enviado -->
+     <!-- o method pode ser GET (usar com dados não sensíveis, quando quiser compartilhar a url, tem limite de 3000bites(3000 letraws) ) ou POST(usar em campos sensíveis, fotos, dados com mais de 3000bites, envios de arquivos) -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+
+    <!--Tag Label - faz a conexão do associa o elemento dele como elemento do form  -->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

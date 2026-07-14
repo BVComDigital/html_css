@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="dataform.js" method="get" id="exemploform" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- No input tipo radio, tem que ter o mesmo name, o usu do checked só pode ser utilizado em uma opção -->
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas">Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <br>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required minlength="3" maxlength="50">
+            <br>
+            <label for="isobre">Sobrenome: </label>
+            <input type="text" name="sobre" id="isobre" minlength="3" maxlength="50">
+            <br>
+            <label for="icpf">CPF: </label>
+            <input type="text" id="cpf" name="cpf" inputmode="numeric" autocomplete="cpf" placeholder="000.000.000-00" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            <br>
+            <label for="telefone">Telefone (com DDD):</label>
+            <input type="tel" id="telefone" name="telefone" 
+                placeholder="(82) 99999-9999" 
+                pattern="\(\d{2}\) \d{5}-\d{4}" 
+                required>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbs" id="iesbas"> <label for="iesbas">Basquete</label>
+            <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <br>
+            <input type="checkbox" name="esnat" id="iesnat" checked> <label for="iesnat">Natação</label>
+            <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+        
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

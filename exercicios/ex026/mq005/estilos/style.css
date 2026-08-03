@@ -16,6 +16,10 @@ header h1 {
     text-align: center;
 }
 
+body {
+    background-color: lightgray;
+}
+
 menu {
     display: none;
 }
@@ -55,7 +59,7 @@ menu > ul > li > a:hover {
 
 main {
     width: 90vw;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: auto;
     padding: 10px;
     border-radius: 10px;

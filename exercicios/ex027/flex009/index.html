@@ -1,0 +1,96 @@
+<!-- flex-basis: auto; => controla a largura dos itens de acordo com seu conteúdo.  -->
+<!-- flex-basis: 200px; => com valor fixo, controla a largura dos itens independente de seu conteúdo. Se precisar diminuem de forma igual, quebrando conteúdo. Se a tela aumenta, não passam de 200px -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.conteiner2 {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: lightcyan;
+            border:  1px solid black;
+            text-align: center;
+            flex-basis: max-content;
+
+        }
+        div.item2 {
+            background-color: lightcyan;
+            border:  1px solid black;
+            text-align: center;
+            flex-basis: auto;
+
+        }
+        div.item3 {
+            background-color: lightcyan;
+            border:  1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+
+        }
+        div.item4 {
+            background-color: lightcyan;
+            border:  1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">Outro conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">Conteúdo um pouco maior</div>
+        <div class="item">Conteúdo dque vai ocupar mais espaço que outros</div>
+        <div class="item">F</div>
+        <div class="item">Aqui também tem conteúdo</div>
+
+    </div>
+    <br>
+    <div class="conteiner">
+        <div class="item2">A</div>
+        <div class="item2">Outro conteúdo</div>
+        <div class="item2">C</div>
+        <div class="item2">Conteúdo um pouco maior</div>
+        <div class="item2">Conteúdo dque vai ocupar mais espaço que outros</div>
+        <div class="item2">F</div>
+        <div class="item2">Aqui também tem conteúdo</div>
+
+    </div>
+    <br>
+    <div class="conteiner2">
+        <div class="item3">A</div>
+        <div class="item3">Outro conteúdo</div>
+        <div class="item3">C</div>
+        <div class="item3">Conteúdo um pouco maior</div>
+        <div class="item3">Conteúdo dque vai ocupar mais espaço que outros</div>
+        <div class="item3">F</div>
+        <div class="item3">Aqui também tem conteúdo</div>
+
+    </div>
+    <br>
+    <div class="conteiner">
+        <div class="item4">A</div>
+        <div class="item4">Outro conteúdo</div>
+        <div class="item4">C</div>
+        <div class="item4">Conteúdo um pouco maior</div>
+        <div class="item4">Conteúdo dque vai ocupar mais espaço que outros</div>
+        <div class="item4">F</div>
+        <div class="item4">Aqui também tem conteúdo</div>
+
+    </div>
+</body>
+</html>

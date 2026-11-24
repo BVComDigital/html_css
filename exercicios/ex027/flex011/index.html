@@ -1,0 +1,51 @@
+<!-- flex-shirink: => controla a encolhimento do item. Se for 1 significa que pode enconlher.   -->
+<!-- flex-grow: => Controla o crescimento do item. Se for 0 não cresce.  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightcyan;
+            border:  1px solid black;
+            text-align: center;
+            flex-basis: 300px;
+        }
+
+        div#cxA,#cxF {
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        div#cxB,#cxE {
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+        div #cxC, #cxD {
+            flex-shrink: 6;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+
+    </div>
+    <div class="conteiner">
+        <div class="item" id="cxD">D</div>
+        <div class="item" id="cxE">E</div>
+        <div class="item" id="cxF">F</div>
+
+    </div>
+</body>
+</html>

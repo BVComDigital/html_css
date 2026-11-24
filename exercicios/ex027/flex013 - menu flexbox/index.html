@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+
+        <!-- Ícone hambúrguer adicionado -->
+        <span id="burguer" onclick="clickMenu()">&#9776;</span>
+        <nav id="itens">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+            <a href="#">Menu 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de flexbox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corporis ratione dolorum soluta tenetur placeat, sit temporibus commodi, a suscipit sed ex consequuntur! Eos sequi commodi quae quos obcaecati at.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis totam eum error ipsa minus, saepe recusandae impedit, reprehenderit, ducimus nam debitis velit facilis qui odit doloremque! Nobis, assumenda? Debitis, id.</p>
+    </main>
+    <script>
+    function clickMenu() {
+        let itens = document.getElementById('itens');
+        if (itens.style.display === 'flex') {
+            itens.style.display = 'none';
+        } else {
+            itens.style.display = 'flex';
+        }
+    }
+</script>
+</body> 
+</html>

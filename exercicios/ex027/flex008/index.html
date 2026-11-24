@@ -1,0 +1,57 @@
+ <!-- Align-self -> funciona os itens separadamente (auto, flex-start/end, center, stretch.). Funciona no cross-axis. -->
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            /* align-items = vale para todos os itens */
+            align-items: flex-start; 
+
+        }
+
+        div.item {
+            background-color: lightcyan;
+            border:  1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#id1 {
+            /* align-self = individualiza o comportamento de alinhamento do item. */
+            align-self: flex-end;
+        }
+        div#id2 {
+            /* align-self: auto; = herda do align-items */
+            align-self: auto;
+        }
+        div#id6 {
+            align-self: center;
+        }
+        div#id3 {
+            align-self: flex-start;
+        }
+        div#id5 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="id1">A</div>
+        <div class="item" id="id2">B</div>
+        <div class="item" id="id3">C</div>
+        <div class="item" id="id4">D</div>
+        <div class="item" id="id5">E</div>
+        <div class="item" id="id6">F</div>
+        <div class="item" id="id7">G</div>
+
+    </div>
+</body>
+</html>

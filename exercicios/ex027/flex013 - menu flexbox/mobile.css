@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Exibe o ícone hambúrguer no mobile */
+#burguer {
+    display: block;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header, header > nav { 
+    flex-flow: column nowrap;
+}
+
+
+/* Esconde as opções do menu por padrão no mobile */
+header > nav {
+    display: none;
+    width: 100%;
+}
+
+header > nav > a {
+    width: 100%; /* Faz os botões ocuparem toda a largura */
+}
